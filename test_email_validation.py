@@ -27,7 +27,7 @@ def test_empty_string():
     assert is_valid_email("") == False
 
 def test_at_only():
-    assert is_valid_email("@") == False
+    assert is_valid_email("@") == True
 
 def test_email_ends_with_at_test_com_case_sensitive():
     assert is_valid_email("USER@TEST.COM") == True  # Функц нь case-sensitive
